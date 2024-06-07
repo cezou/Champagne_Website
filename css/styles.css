@@ -6,13 +6,17 @@
 
 @font-face {
 	font-family: 'Avenir Next';
-	src: url("public/fonts/Avenir Next.ttc");
+	src: url("public/fonts/AvenirNext.ttc");
 }
 
 @media (max-width: 800px) {
-	.home-header-menu ul {
+	.header-menu ul {
 		flex-direction: column;
 	}
+}
+
+.bold {
+	font-weight: bold;
 }
 
 body {
@@ -27,21 +31,24 @@ body {
 	width: 100%;
 }
 
-.home-header {
+.header {
+	position: absolute;
 	display: flex;
 	width: 100%;
-	height: 22vh;
+	height: 20vh;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 20px;
+	z-index: 2;
+	/* Add this line */
 }
 
-.home-header-logo img {
+.header-logo img {
 	height: 100px;
 	/* Adjust according to your design */
 }
 
-.home-header-menu ul {
+.header-menu ul {
 	display: flex;
 	list-style: none;
 	color: var(--blanc, #FFF);
@@ -52,11 +59,12 @@ body {
 	/* This will center the items vertically */
 }
 
-.home-header-menu ul li {
-	margin: 0 15px;
+.header-menu ul li {
+	margin-left: 7.5px;
+	margin-right: 7.5px;
 }
 
-.home-header-menu ul li a {
+.header-menu ul li a {
 	text-decoration: none;
 	color: white;
 	font-size: 13px;
@@ -64,16 +72,50 @@ body {
 	/* Adjust according to your design */
 }
 
-.home-header-lang {
+.header-lang {
 	display: flex;
 	align-items: center;
 }
 
-.home-header-lang a {
+.header-lang a {
 	text-decoration: none;
 	color: white;
 	font-size: 13px;
 	line-height: 14.4px;
 	text-decoration: none;
 	color: white;
+}
+
+#home {
+	position: relative;
+}
+
+#bouteille {
+	position: absolute;
+	top: 20vh;
+	left: 50%;
+	height: 66vh;
+	background-image: url('../public/images/home/bouteille.png');
+	background-size: cover;
+	background-position: center;
+	transform: translateX(-50%);
+}
+
+#link-container {
+	position: absolute;
+	bottom: 7vh;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+#disco {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+
 }
