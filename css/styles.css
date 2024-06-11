@@ -1,8 +1,13 @@
+:root {
+	--dark: #181818;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 
 @font-face {
 	font-family: 'Avenir Next Regular';
@@ -43,13 +48,79 @@ body {
 	width: 100%;
 }
 
-#home_domaine {
-	height: 90vh;
+h2 {
+	text-transform: uppercase;
 }
+
+h5 {
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+#home {
+	position: relative;
+}
+
+#bouteille {
+	position: absolute;
+	top: 15vh;
+	height: 70vh;
+	background-image: url('../public/images/home/bouteille.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#link-container {
+	position: absolute;
+	bottom: 8vh;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+#disco {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+}
+
+#arrow {
+	position: absolute;
+	bottom: 4vh;
+}
+
+#label {
+	position: absolute;
+	bottom: 4vh;
+	right: 5%;
+}
+
+.h1 {
+	color: #000;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.logohome {
+	left: 50%;
+	transform: translateX(-50%);
+	padding-right: 10px;
+	height: 36.75vh;
+	top: 20%;
+}
+
 
 #footer {
 	height: 58.64vh;
-	background-color: #181818;
+	background-color: var(--dark);
 }
 
 .header {
@@ -103,60 +174,6 @@ body {
 	color: white;
 }
 
-#home {
-	position: relative;
-}
-
-#bouteille {
-	position: absolute;
-	top: 15vh;
-	height: 70vh;
-	background-image: url('../public/images/home/bouteille.png');
-	background-size: cover;
-	background-position: center;
-}
-
-#link-container {
-	position: absolute;
-	bottom: 8vh;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
-}
-
-#disco {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: white;
-}
-
-#arrow {
-	position: absolute;
-	bottom: 4vh;
-}
-
-#label {
-	position: absolute;
-	bottom: 4vh;
-	right: 5%;
-}
-
-.h1 {
-	color: #000;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	text-transform: uppercase;
-}
-
-.logohome {
-	left: 46%;
-	height: 36.75vh;
-	top: 20%;
-}
 
 /* Footer Container */
 #footer {
@@ -164,7 +181,7 @@ body {
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 20px;
-	height: 40vh;
+	height: 450px;
 	background-color: #181818;
 	color: var(--blanc, #FFF);
 	font-family: 'Avenir Next Regular', sans-serif;
@@ -188,7 +205,7 @@ body {
 	font-weight: 400;
 	line-height: normal;
 	text-transform: uppercase;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 	/* Espace entre les liens */
 	color: var(--blanc, #FFF);
 }
@@ -203,7 +220,7 @@ body {
 }
 
 .footer-center .footer-logo {
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 	/* Espace entre les images et les textes */
 	max-height: 50px;
 	/* Ajustez cette valeur pour l'échelle souhaitée */
@@ -214,7 +231,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	margin-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .footer-center a {
@@ -232,6 +249,26 @@ body {
 	/* Ajoutez des styles pour les labels ici si nécessaire */
 }
 
+.footer-disclaimer {
+	background-color: white;
+	color: black;
+	height: auto;
+	/* Change this to auto to allow the container to expand with the content */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+
+	/* Add some padding to give space around the text */
+}
+
+.footer-disclaimer strong {
+	font-weight: bold;
+}
+
 #squid {
 	padding-bottom: 25px;
 }
@@ -241,24 +278,100 @@ body {
 	margin-right: 20px;
 }
 
+.social {
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+.social-container {
+	margin-top: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#home_domaine {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 100px;
+	width: 80vw;
+	background-color: lightgray;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#domaine_text {
+	width: 50%;
+}
+
+#bouteillenlair {
+	width: 50%;
+	max-height: 50vh;
+	object-fit: contain;
+}
+
+
+
+
+
 /* Responsive Design */
 @media (max-width: 800px) {
+	.logohome {
+		left: 50%;
+		transform: translateX(-50%);
+		padding-right: 10px;
+		height: 30vh;
+		top: 20%;
+	}
+
 	#footer {
+		padding-top: 100px;
 		flex-direction: column;
 		/* Empiler les sections en colonne sur les petits écrans */
 		align-items: center;
-		height: 80vh;
+		height: 800px;
 	}
 
 	.footer-left,
 	.footer-center,
 	.footer-right {
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 		/* Espace entre les sections */
 	}
 
 	.footer-center .footer-logo {
 		max-height: 40px;
 		/* Réduire la taille des logos pour les petits écrans */
+	}
+
+	#home_domaine {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#domaine_text,
+	#bouteillenlair {
+		width: 100%;
 	}
 }
