@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Champagne Simone et Lucien</title>
-        <link rel="icon" type="image/png" href="public/images/favicon.png">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-        <div id="header-container"></div>
-        <section id="home">
-            <img id="bouteille" src="../public/images/home/bouteille.png"></img>
-            <div id="link-container">
-                <a id="disco" href="#decouvrir">Découvrir</a>
-            </div>
-        </section>
-        <!-- Domaine -->
-        <section id="home.domaine">
-        </section>
-    </body>
+
+<head>
+    <title>Champagne Simone et Lucien</title>
+    <link rel="icon" type="image/png" href="public/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <section id="home">
+        <img class="absolute center logohome" id="logo_front" src="public/images/logo-behind.png"></img>
+        <img class="absolute center" id="bouteille" src="public/images/home/bouteille.png"></img>
+        <img class="absolute center logohome" id="logo_front" src="public/images/logo-front.png"></img>
+        <div class="absolute center" id="link-container"><a id="disco" href="#home_domaine">Découvrir</a></div>
+        <svg class="absolute center" href="#home_domaine" id="arrow" xmlns="http://www.w3.org/2000/svg" width="9"
+            height="29" viewBox="0 0 9 29" fill="none">
+            <path
+                d="M4.14645 28.3536C4.34171 28.5488 4.65829 28.5488 4.85355 28.3536L8.03553 25.1716C8.2308 24.9763 8.2308 24.6597 8.03553 24.4645C7.84027 24.2692 7.52369 24.2692 7.32843 24.4645L4.5 27.2929L1.67157 24.4645C1.47631 24.2692 1.15973 24.2692 0.964465 24.4645C0.769203 24.6597 0.769203 24.9763 0.964465 25.1716L4.14645 28.3536ZM4 -2.18557e-08L4 28L5 28L5 2.18557e-08L4 -2.18557e-08Z"
+                fill="white" />
+        </svg>
+
+        <img id="label" src="public/images/image-49.png"></img>
+    </section>
+    <!-- Domaine -->
+    <section id="home_domaine">
+    </section>
+    <section id="footer">
+        <div class="footer-left">
+            <h2>NOS CHAMPAGNES</h2>
+            <h2>NOTRE DOMAINE</h2>
+            <h2>NOTRE APPROCHE</h2>
+            <h2>ACTUALITES</h2>
+            <h2>NOUS CONTACTER</h2>
+        </div>
+        <div class="footer-center">
+            <img src="public/images/tulipe.svg"></img>
+            <img id="squid" src="public/images/logo-sl-blanc-021.svg"></img>
+            <p><a href="https://maps.app.goo.gl/ZbUCCup5jFRuGeTq5" target="_blank">153 Route
+                    Nationale<br>02310 Saulchery</a></p>
+            <p><a href="tel:+33616177653">+33 6 16 17 76 53</a></p>
+            <p><a href="tel:+33678415649">+33 6 78 41 56 49</a></p>
+            <p><a href="mailto:contact@champagne-simone-lucien.fr">contact@champagne-simone-lucien.fr</a></p>
+        </div>
+        <div class="footer-right">
+            <img src="public/images/labelab.svg"></img>
+            <img id="label2" src="public/images/label2.svg"></img>
+            <img src="public/images/labelacb.svg"></img>
+        </div>
+    </section>
+</body>
+
 </html>
