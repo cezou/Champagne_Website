@@ -157,7 +157,6 @@ h5 {
 	color: white;
 	font-size: 13px;
 	line-height: 14.4px;
-	/* Adjust according to your design */
 }
 
 .header-lang {
@@ -175,7 +174,6 @@ h5 {
 }
 
 
-/* Footer Container */
 #footer {
 	display: flex;
 	justify-content: space-evenly;
@@ -188,15 +186,11 @@ h5 {
 	font-weight: 100;
 }
 
-/* Footer Left Section (Links) */
 .footer-left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	flex: 1;
-
-
-	/* Afficher les liens de haut en bas */
 }
 
 .footer-left h2 {
@@ -210,7 +204,6 @@ h5 {
 	color: var(--blanc, #FFF);
 }
 
-/* Footer Center Section (Logos and Contacts) */
 .footer-center {
 	flex: 1;
 	text-align: center;
@@ -221,9 +214,7 @@ h5 {
 
 .footer-center .footer-logo {
 	padding-bottom: 15px;
-	/* Espace entre les images et les textes */
 	max-height: 50px;
-	/* Ajustez cette valeur pour l'échelle souhaitée */
 }
 
 .footer-center p {
@@ -243,17 +234,14 @@ h5 {
 	text-decoration: underline;
 }
 
-/* Footer Right Section (Labels) */
 .footer-right {
 	flex: 1;
-	/* Ajoutez des styles pour les labels ici si nécessaire */
 }
 
 .footer-disclaimer {
 	background-color: white;
 	color: black;
 	height: auto;
-	/* Change this to auto to allow the container to expand with the content */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -261,8 +249,6 @@ h5 {
 	font-size: 15px;
 	padding: 10px;
 	text-align: center;
-
-	/* Add some padding to give space around the text */
 }
 
 .footer-disclaimer strong {
@@ -300,42 +286,65 @@ h5 {
 
 
 
-
-
-
-
-
-
-
-
-
-
 #home_domaine {
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 100px;
 	width: 80vw;
-	background-color: lightgray;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #domaine_text {
 	width: 50%;
+	padding-right: 10px;
 }
 
 #bouteillenlair {
-	width: 50%;
-	max-height: 50vh;
+	width: 40vw;
 	object-fit: contain;
 }
 
+.paddingbot30 {
+	padding-bottom: 30px;
+
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+
+}
+
+.button {
+	transition: 0.5s;
+	display: inline-flex;
+	padding: 16px 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid #000;
+	background: #FFF;
+	color: #000;
+	text-align: center;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.button:hover {
+	transition: 0.5s;
+	background: lightgray;
+}
 
 
-
-
-/* Responsive Design */
 @media (max-width: 800px) {
 	.logohome {
 		left: 50%;
@@ -348,7 +357,6 @@ h5 {
 	#footer {
 		padding-top: 100px;
 		flex-direction: column;
-		/* Empiler les sections en colonne sur les petits écrans */
 		align-items: center;
 		height: 800px;
 	}
@@ -357,12 +365,10 @@ h5 {
 	.footer-center,
 	.footer-right {
 		margin-bottom: 50px;
-		/* Espace entre les sections */
 	}
 
 	.footer-center .footer-logo {
 		max-height: 40px;
-		/* Réduire la taille des logos pour les petits écrans */
 	}
 
 	#home_domaine {
