@@ -35,4 +35,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		.then(data => {
 			document.querySelector('#header-container').innerHTML = data;
 		});
+	fetch('html/footer.html')
+		.then(response => response.text())
+		.then(data => {
+			document.querySelector('#footer-container').innerHTML = data;
+		});
 });
