@@ -1,491 +1,523 @@
 :root {
-	--dark: #181818;
+  --dark: #181818;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 @font-face {
-	font-family: 'Avenir Next Regular';
-	src: url('../public/fonts/AvenirNextCyr-Regular.ttf');
-	font-weight: 100;
-	font-style: normal;
+  font-family: "Avenir Next Regular";
+  src: url("../public/fonts/AvenirNextCyr-Regular.ttf");
+  font-weight: 100;
+  font-style: normal;
 }
 
 @media (max-width: 800px) {
-	.header-menu ul {
-		flex-direction: column;
-	}
+  .header-menu ul {
+    flex-direction: column;
+  }
 }
 
 .absolute {
-	position: absolute;
+  position: absolute;
 }
 
 .center {
-	left: 50%;
-	transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 body {
-	font-family: 'Avenir Next Regular', sans-serif;
-	font-weight: 100;
+  font-family: "Avenir Next Regular", sans-serif;
+  font-weight: 100;
 }
 
 #home {
-	background-image: url('../public/images/home/header-flou.jpeg');
-	background-size: cover;
-	background-position: center;
-	height: 100svh;
-	width: 100%;
+  background-image: url("../public/images/home/header-flou.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100svh;
+  width: 100%;
 }
 
 h2 {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h5 {
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 #home {
-	position: relative;
+  position: relative;
 }
 
 #bouteille {
-	position: absolute;
-	top: 15vh;
-	height: 70vh;
-	background-image: url('../public/images/home/bouteille.png');
-	background-size: cover;
-	background-position: center;
+  position: absolute;
+  top: 15vh;
+  height: 70vh;
+  background-image: url("../public/images/home/bouteille.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #link-container {
-	position: absolute;
-	bottom: 8vh;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
+  position: absolute;
+  bottom: 8vh;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 #disco {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 
 #arrow {
-	position: absolute;
-	bottom: 4vh;
+  position: absolute;
+  bottom: 4vh;
 }
 
 #label {
-	position: absolute;
-	bottom: 4vh;
-	right: 5%;
+  position: absolute;
+  bottom: 4vh;
+  right: 5%;
 }
 
 .h1 {
-	color: #000;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	text-transform: uppercase;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .logohome {
-	left: 50%;
-	transform: translateX(-50%);
-	padding-right: 10px;
-	height: 36.75vh;
-	top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 10px;
+  height: 36.75vh;
+  top: 20%;
 }
 
-
 #footer {
-	height: 58.64vh;
-	background-color: var(--dark);
+  height: 58.64vh;
+  background-color: var(--dark);
 }
 
 .header {
-	position: absolute;
-	display: flex;
-	width: 100%;
-	height: 15vh;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 20px;
-	z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 2;
 }
 
 .header-logo img {
-	height: 100px;
+  height: 100px;
 }
 
 .header-menu ul {
-	display: flex;
-	list-style: none;
-	color: var(--blanc, #FFF);
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  list-style: none;
+  color: var(--blanc, #fff);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-menu ul li {
-	margin-left: 7.5px;
-	margin-right: 7.5px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
 }
 
 .header-menu ul li a {
-	text-decoration: none;
-	color: white;
-	font-size: 13px;
-	line-height: 14.4px;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 14.4px;
 }
 
 .header-lang {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-lang a {
-	text-decoration: none;
-	color: white;
-	font-size: 13px;
-	line-height: 14.4px;
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 14.4px;
+  text-decoration: none;
+  color: white;
 }
 
-
 #footer {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 20px;
-	height: 450px;
-	background-color: #181818;
-	color: var(--blanc, #FFF);
-	font-family: 'Avenir Next Regular', sans-serif;
-	font-weight: 100;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  height: 450px;
+  background-color: #181818;
+  color: var(--blanc, #fff);
+  font-family: "Avenir Next Regular", sans-serif;
+  font-weight: 100;
 }
 
 .footer-left {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .footer-left h2 {
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
-	padding-bottom: 15px;
-	color: var(--blanc, #FFF);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: var(--blanc, #fff);
 }
 
 .footer-center {
-	flex: 1;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-center .footer-logo {
-	padding-bottom: 15px;
-	max-height: 50px;
+  padding-bottom: 15px;
+  max-height: 50px;
 }
 
 .footer-center p {
-	font-size: 15px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	padding-bottom: 10px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
 }
 
 .footer-center a {
-	color: var(--blanc, #FFF);
-	text-decoration: none;
+  color: var(--blanc, #fff);
+  text-decoration: none;
 }
 
 .footer-center a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-right {
-	flex: 1;
+  flex: 1;
 }
 
 .footer-disclaimer {
-	background-color: white;
-	color: black;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 15px;
-	padding: 10px;
-	text-align: center;
+  background-color: white;
+  color: black;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
 }
 
 .footer-disclaimer strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 #squid {
-	padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 #label2 {
-	margin-left: 20px;
-	margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .social {
-	margin-left: 9px;
-	margin-right: 9px;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .social-container {
-	margin-top: 19px;
+  margin-top: 19px;
 }
-
-
-
-
-
-
-
-
-
 
 #home_champagne {
-	text-align: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-top: 100px;
-	width: 80vw;
-	margin-left: auto;
-	margin-right: auto;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-
 #home_domaine {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-top: 100px;
-	width: 80vw;
-	margin-left: auto;
-	margin-right: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home_preserver {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #domaine_text {
-	width: 50%;
-	padding-right: 5%;
+  width: 50%;
+  padding-right: 5%;
+}
+
+#preserver_text {
+  width: 60%;
+  padding-left: 5%;
+}
+
+#preserver_content {
+  text-align: justify;
 }
 
 #bouteillenlair {
-	width: 40vw;
-	object-fit: contain;
+  width: 40vw;
+  object-fit: contain;
+}
+
+#poule {
+  width: 30vw;
+  object-fit: contain;
+  padding-bottom: 30px;
 }
 
 .paddingbot30 {
-	padding-bottom: 30px;
+  padding-bottom: 30px;
+}
 
+.paddingtop100 {
+  padding-top: 100px;
 }
 
 .button-container {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 30px;
-
+  display: flex;
+  justify-content: center;
 }
 
 .button {
-	transition: 0.5s;
-	display: inline-flex;
-	padding: 16px 32px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	border: 1px solid #000;
-	background: #FFF;
-	color: #000;
-	text-align: center;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
-	margin: 0 auto;
-	cursor: pointer;
+  transition: 0.5s;
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .button:hover {
-	transition: 0.5s;
-	background: lightgray;
+  transition: 0.5s;
+  background: lightgray;
 }
 
 #champagne_cards {
-	gap: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .champagne-card {
-
-	flex: 1 0 calc(100% / 3 - 20px);
-	/* This will make the cards take up equal space */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background: var(--dark, hsl(0, 4%, 5%));
-	box-sizing: border-box;
-	margin-bottom: 20px;
+  flex: 1 0 calc(100% / 3 - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark, hsl(0, 4%, 5%));
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .champagne-card::before {
-	content: "";
-	display: block;
-	/* This will make the height 1.4 times the width */
-	/* This will hide the pseudo-element */
+  content: "";
+  display: block;
 }
 
 .champagne-image {
-	padding-top: 20px;
-	width: 100%;
-	height: calc(27vw - 40px);
-
-	object-fit: contain;
+  padding-top: 20px;
+  width: 100%;
+  height: calc(27vw - 40px);
+  object-fit: contain;
 }
 
 .card-text {
-	text-align: left;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
 }
 
-
-
 @media (max-width: 800px) {
-	.champagne-image {
-		width: 100%;
-		height: 80vw;
-		object-fit: contain;
-	}
+  .champagne-image {
+    width: 100%;
+    height: 70vw;
+    object-fit: contain;
+  }
+  .champagne-card {
+    width: 100%;
+  }
 
-	#champagne_cards {
-		flex-direction: column;
-	}
+  #champagne_cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.champagne-card {
-		flex: 1 0 100%;
-	}
+  .champagne-card {
+    flex: 1 0 100%;
+  }
 }
 
 .card-text h2 {
-	color: var(--blanc, #FFF);
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	text-transform: uppercase;
-	text-align: left;
-	margin: 0;
+  color: var(--blanc, #fff);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
 }
 
-
-
 .card-text p {
-
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-	text-transform: uppercase;
-	text-align: left;
-
-	margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
 }
 
 .blue {
-	color: var(--1ed, #5BA9D4);
+  color: var(--1ed, #5ba9d4);
 }
 
 .yellow {
-	color: var(--3ed, #CDBE48);
+  color: var(--3ed, #cdbe48);
 }
 
 .orange {
-	color: var(--2ed, #BA8D69);
-
+  color: var(--2ed, #ba8d69);
 }
 
+#insta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#insta h2 {
+  text-transform: lowercase;
+}
 
 @media (max-width: 800px) {
-	.logohome {
-		left: 50%;
-		transform: translateX(-50%);
-		padding-right: 10px;
-		height: 30vh;
-		top: 20%;
-	}
+  .logohome {
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 10px;
+    height: 30vh;
+    top: 20%;
+  }
 
-	#footer {
-		padding-top: 100px;
-		flex-direction: column;
-		align-items: center;
-		height: 800px;
-	}
+  #footer {
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+  }
 
-	.footer-left,
-	.footer-center,
-	.footer-right {
-		margin-bottom: 50px;
-	}
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 50px;
+  }
 
-	.footer-center .footer-logo {
-		max-height: 40px;
-	}
+  .footer-center .footer-logo {
+    max-height: 40px;
+  }
 
-	#home_domaine {
-		flex-direction: column;
-		align-items: center;
-	}
+  #home_domaine {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home_preserver {
+    gap: 30px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-	#domaine_text,
-	#bouteillenlair {
-		width: 100%;
-	}
+  #preserver_title {
+    text-align: center;
+  }
+
+  #poule,
+  #bouteillenlair,
+  #preserver_text,
+  #domaine_text {
+    width: 100%;
+    padding: 0;
+  }
+  #poule {
+  }
 }
